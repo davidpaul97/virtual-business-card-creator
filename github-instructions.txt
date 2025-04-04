@@ -1,0 +1,15 @@
+# After creating your GitHub repository, run these commands to push your code:
+
+# Add the remote repository URL (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/virtual-business-card-creator.git
+
+# Push your code to GitHub
+git push -u origin master
+
+# If you're using a personal access token instead of password authentication:
+# 1. Go to GitHub > Settings > Developer settings > Personal access tokens
+# 2. Generate a new token with 'repo' permissions
+# 3. Use this token as your password when prompted during the push
+
+# After pushing, your code will be available at:
+# https://github.com/YOUR_USERNAME/virtual-business-card-creator
