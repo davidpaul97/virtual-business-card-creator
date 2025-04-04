@@ -50,13 +50,14 @@ To use the Virtual Business Card Creator:
 ### Landing Page
 ![Landing Page](screenshots/landing-page.png)
 
+### Features & Benefits
+![Features](screenshots/features.png)
+
 ### Card Creator Interface
 ![Card Creator](screenshots/card-creator.png)
 
-### Generated Business Card Example
-![Business Card Example](screenshots/business-card-example.png)
-
-*Note: Replace these placeholder images with actual screenshots of your application.*
+### Testimonials
+![Testimonials](screenshots/testimonials.png)
 
 ## License
 
