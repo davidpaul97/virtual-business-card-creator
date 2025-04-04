@@ -51,17 +51,14 @@ To use the Virtual Business Card Creator:
 
 ## Screenshots
 
-### Landing Page
-![Landing Page](screenshots/landing-page.png)
+The application includes the following key screens:
 
-### Features & Benefits
-![Features](screenshots/features.png)
+- **Landing Page**: A welcoming homepage that introduces users to the digital business card creator
+- **Features & Benefits**: Showcases the key features including mobile-friendly design, easy sharing, privacy, and instant downloads
+- **Card Creator Interface**: The form where users input their personal and professional information
+- **Testimonials**: Real feedback from professionals who have used the digital business card creator
 
-### Card Creator Interface
-![Card Creator](screenshots/card-creator.png)
-
-### Testimonials
-![Testimonials](screenshots/testimonials.png)
+*Note: Screenshots are available in the GitHub repository's screenshots directory. You can also see the live application by visiting the [demo link](https://davidpaul97.github.io/virtual-business-card-creator/).*
 
 ## License
 
