@@ -14,8 +14,10 @@ A modern, web-based tool that allows users to create and share professional digi
 - **QR Code Generation**: Automatically creates a QR code with your contact information in vCard format
 - **Customization Options**: Choose card colors, layout, and styling to match your personal brand
 - **Instant Download**: Save your digital business card as an image for easy sharing
-- **Mobile Friendly**: Responsive design works on all devices
+- **Mobile Friendly**: Your digital card looks great on any device
 - **Privacy First**: All data stays on your device - no server storage
+- **Social Media Integration**: Include links to your LinkedIn, Twitter, GitHub, and other platforms
+- **Easy Sharing**: Share via QR code or digital link
 
 ## How It Works
 
@@ -30,6 +32,8 @@ A modern, web-based tool that allows users to create and share professional digi
 - CSS3
 - JavaScript
 - QR Code Generator Library
+- Font Awesome Icons
+- Responsive Design Techniques
 
 ## Getting Started
 
