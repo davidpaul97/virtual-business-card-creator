@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Business Card Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>VirtualCard<span>Pro</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#generator">Create Card</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Networking with a Digital Business Card</h1>
+                <p>Input your details and instantly create a shareable digital card with a QR code.</p>
+                <a href="#generator" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <div class="card-illustration">
+                    <div class="card-animation-container">
+                        <div class="card-preview">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-avatar"></div>
+                                <div class="card-details">
+                                    <div class="card-line"></div>
+                                    <div class="card-line"></div>
+                                    <div class="card-line"></div>
+                                </div>
+                                <div class="card-qr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3>Step 1</h3>
+                    <p>Input your contact information (name, title, company, email, phone, etc.)</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Step 2</h3>
+                    <p>Customize design elements (colors, fonts, layout)</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3>Step 3</h3>
+                    <p>Generate your digital card with a unique QR code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Features & Benefits</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Your digital card looks great on any device</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Easy Sharing</h3>
+                    <p>Share via QR code or digital link</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Privacy First</h3>
+                    <p>All data stays on your device - no server storage</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-download"></i>
+                    <h3>Instant Download</h3>
+                    <p>Save your card as an image for easy use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Generator Section -->
+    <section id="generator">
+        <div class="container">
+            <h2>Create Your Digital Business Card</h2>
+            <div class="generator-container">
+                <div class="form-container">
+                    <form id="card-form">
+                        <div class="form-group">
+                            <h3>Personal Information</h3>
+                            <input type="text" id="fullName" placeholder="Full Name" required>
+                            <input type="text" id="jobTitle" placeholder="Job Title">
+                            <input type="text" id="company" placeholder="Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <h3>Contact Information</h3>
+                            <input type="email" id="email" placeholder="Email Address">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                            <input type="url" id="website" placeholder="Website URL">
+                        </div>
+                        
+                        <div class="form-group">
+                            <h3>Social Media</h3>
+                            <div class="social-input">
+                                <i class="fab fa-linkedin"></i>
+                                <input type="url" id="linkedin" placeholder="LinkedIn URL">
+                            </div>
+                            <div class="social-input">
+                                <i class="fab fa-twitter"></i>
+                                <input type="url" id="twitter" placeholder="Twitter URL">
+                            </div>
+                            <div class="social-input">
+                                <i class="fab fa-github"></i>
+                                <input type="url" id="github" placeholder="GitHub URL">
+                            </div>
+                            <div class="social-input">
+                                <i class="fab fa-instagram"></i>
+                                <input type="url" id="instagram" placeholder="Instagram URL">
+                            </div>
+                            <div class="social-input">
+                                <i class="fab fa-facebook"></i>
+                                <input type="url" id="facebook" placeholder="Facebook URL">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h3>Card Design</h3>
+                            <label for="cardColor">Card Color:</label>
+                            <input type="color" id="cardColor" value="#ffffff">
+                            
+                            <label for="textColor">Text Color:</label>
+                            <input type="color" id="textColor" value="#000000">
+                            
+                            <label for="cardLayout">Card Layout:</label>
+                            <select id="cardLayout">
+                                <option value="standard">Standard</option>
+                                <option value="modern">Modern</option>
+                                <option value="minimal">Minimal</option>
+                            </select>
+                        </div>
+                        
+                        <button type="button" id="generateBtn" class="btn btn-primary">Generate Card</button>
+                    </form>
+                </div>
+                
+                <div class="preview-container">
+                    <h3>Card Preview</h3>
+                    <div id="card-preview">
+                        <div class="preview-card">
+                            <div class="preview-header">
+                                <h2 id="preview-name">Your Name</h2>
+                                <p id="preview-title">Your Title</p>
+                                <p id="preview-company">Your Company</p>
+                            </div>
+                            <div class="preview-contact">
+                                <p id="preview-email"><i class="fas fa-envelope"></i> email@example.com</p>
+                                <p id="preview-phone"><i class="fas fa-phone"></i> (123) 456-7890</p>
+                                <p id="preview-website"><i class="fas fa-globe"></i> website.com</p>
+                            </div>
+                            <div class="preview-social">
+                                <a href="#" id="preview-linkedin"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" id="preview-twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" id="preview-github"><i class="fab fa-github"></i></a>
+                                <a href="#" id="preview-instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" id="preview-facebook"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+                    <div class="preview-actions">
+                        <button id="downloadBtn" class="btn btn-secondary">Download Card</button>
+                        <button id="copyLinkBtn" class="btn btn-secondary">Copy Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Professionals Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"This tool has completely transformed how I network at conferences. No more running out of business cards!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The QR code feature makes sharing my contact information incredibly easy. I've received so many compliments on my digital card."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>David Chen</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I love that I can update my information anytime. It's so much more flexible than traditional business cards."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Maria Rodriguez</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Section -->
+    <section id="sponsored">
+        <div class="container">
+            <h2>Recommended Services</h2>
+            <div class="ad-container">
+                <div class="ad-box">
+                    <h3>Premium Templates</h3>
+                    <p>Upgrade your digital card with our premium design templates.</p>
+                    <a href="#" class="btn btn-small">Learn More</a>
+                </div>
+                <div class="ad-box">
+                    <h3>Professional Networking</h3>
+                    <p>Connect with industry professionals on our partner platforms.</p>
+                    <a href="#" class="btn btn-small">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>VirtualCard<span>Pro</span></h2>
+                    <p>Your Digital Business Card, Instantly</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#generator">Create Card</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@virtualcardpro.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VirtualCardPro. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
