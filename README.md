@@ -1,6 +1,12 @@
 # Virtual Business Card Creator
 
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 A modern, web-based tool that allows users to create and share professional digital business cards with QR codes. Perfect for networking events, conferences, and modern professionals who want to make a lasting impression while reducing paper waste.
+
+> **Keywords**: digital business card, virtual business card, QR code generator, contact information sharing, networking tool, paperless business cards, vCard generator, professional profile creator
 
 ## Features
 
@@ -41,7 +47,16 @@ To use the Virtual Business Card Creator:
 
 ## Screenshots
 
-(Screenshots will be added here)
+### Landing Page
+![Landing Page](screenshots/landing-page.png)
+
+### Card Creator Interface
+![Card Creator](screenshots/card-creator.png)
+
+### Generated Business Card Example
+![Business Card Example](screenshots/business-card-example.png)
+
+*Note: Replace these placeholder images with actual screenshots of your application.*
 
 ## License
 
