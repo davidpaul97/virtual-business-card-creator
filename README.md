@@ -1,6 +1,6 @@
 # Virtual Business Card Creator
 
-A web-based tool that allows users to create and share digital business cards with QR codes.
+A modern, web-based tool that allows users to create and share professional digital business cards with QR codes. Perfect for networking events, conferences, and modern professionals who want to make a lasting impression while reducing paper waste.
 
 ## Features
 
@@ -37,7 +37,7 @@ To use the Virtual Business Card Creator:
 
 ## Live Demo
 
-[View Live Demo](#) (Coming soon)
+[View Live Demo](https://davidpaul97.github.io/virtual-business-card-creator/) - Try it now!
 
 ## Screenshots
 
@@ -49,9 +49,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Created by [Your Name]
+Created by David Paul
 
 ## Acknowledgments
 
 - Font Awesome for icons
 - QR Code Generator library
+
+## GitHub Repository
+
+View the source code and contribute to this project on [GitHub](https://github.com/davidpaul97/virtual-business-card-creator).
